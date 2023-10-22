@@ -12,7 +12,7 @@ class PokemonCard extends Component {
   protected populate(): void {
     this.element.innerHTML = `
     <span class= pokemon-card__name>${this.pokemon.name}</span>
-    <a href="${this.pokemon.url}">Click here</a>
+    <a class= pokemon-card__url href="${this.pokemon.url}">Click here</a>
     `;
   }
 }

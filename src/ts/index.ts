@@ -25,7 +25,7 @@ const buttonsContainer = document.querySelector(".buttons-container")!;
 
 const buttonPrevious = new Button(
   buttonsContainer,
-  "submit",
+  "previous",
   "Previous Pokemons",
   () => {
     throw new Error();
@@ -33,14 +33,9 @@ const buttonPrevious = new Button(
 );
 buttonPrevious.render();
 
-const buttonNext = new Button(
-  buttonsContainer,
-  "submit",
-  "Next Pokemons",
-  () => {
-    throw new Error();
-  },
-);
+const buttonNext = new Button(buttonsContainer, "next", "Next Pokemons", () => {
+  throw new Error();
+});
 buttonNext.render();
 
 const pokemonList = new PokemonsList(body, pokemons);
