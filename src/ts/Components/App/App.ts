@@ -8,7 +8,7 @@ class App extends Component {
   protected populate(): void {
     this.element.innerHTML = `
   <header class= "main-header">
-  <img src="./images/pokemon-logo.svg" alt="Pokemon logo">
+  <img src="./images/pokemon-logo.svg" alt="Pokemon logo" width= 500 height= 500>
   </header>
   <main class= "main-container">
   </main>
