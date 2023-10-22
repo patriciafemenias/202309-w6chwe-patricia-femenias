@@ -12,6 +12,6 @@ export const getPokemons = async (apiUrl: string): Promise<Pokemon[]> => {
 
 const pokemons = await getPokemons(apiUrl);
 
-console.log(pokemons);
+await getPokemons(apiUrl);
 
 export default getPokemons;
