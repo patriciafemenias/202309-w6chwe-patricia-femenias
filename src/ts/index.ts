@@ -1,3 +1,4 @@
+import App from "./Components/App/App.js";
 import type { Pokemon } from "./types/types.js";
 import type { PokemonResponse } from "./types/types.js";
 
@@ -12,6 +13,10 @@ export const getPokemons = async (apiUrl: string): Promise<Pokemon[]> => {
 
 const pokemons = await getPokemons(apiUrl);
 
-console.log(pokemons);
+await getPokemons(apiUrl);
 
 export default getPokemons;
+
+const body = document.querySelector("body")!;
+const app = new App(body);
+app.render();
