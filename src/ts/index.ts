@@ -1,6 +1,6 @@
 import App from "./Components/App/App.js";
 import Button from "./Components/Button/Button.js";
-import PokemonsList from "./Components/PokemonsList/PokemonsList.test.js";
+import PokemonsList from "./Components/PokemonsList/PokemonsList.js";
 import type { Pokemon } from "./types/types.js";
 import type { PokemonResponse } from "./types/types.js";
 
