@@ -1,4 +1,5 @@
 import App from "./Components/App/App.js";
+import Button from "./Components/Button/Button.js";
 import type { Pokemon } from "./types/types.js";
 import type { PokemonResponse } from "./types/types.js";
 
@@ -20,3 +21,25 @@ export default getPokemons;
 const body = document.querySelector("body")!;
 const app = new App(body);
 app.render();
+
+const buttonsContainer = document.querySelector(".buttons-container")!;
+
+const buttonPrevious = new Button(
+  buttonsContainer,
+  "submit",
+  "Previous Pokemons",
+  () => {
+    throw new Error();
+  },
+);
+buttonPrevious.render();
+
+const buttonNext = new Button(
+  buttonsContainer,
+  "submit",
+  "Next Pokemons",
+  () => {
+    throw new Error();
+  },
+);
+buttonNext.render();
