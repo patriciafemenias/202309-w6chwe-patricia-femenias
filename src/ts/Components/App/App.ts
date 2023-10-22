@@ -11,6 +11,8 @@ class App extends Component {
   <img src="./images/pokemon-logo.svg" alt="Pokemon logo" width= 500 height= 500>
   </header>
   <main class= "main-container">
+  <div class= "buttons-container">
+  </div>
   </main>
   `;
   }
