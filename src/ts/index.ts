@@ -1,3 +1,4 @@
+import App from "./Components/App/App.js";
 import type { Pokemon } from "./types/types.js";
 import type { PokemonResponse } from "./types/types.js";
 
@@ -15,3 +16,7 @@ const pokemons = await getPokemons(apiUrl);
 await getPokemons(apiUrl);
 
 export default getPokemons;
+
+const body = document.querySelector("body")!;
+const app = new App(body);
+app.render();
