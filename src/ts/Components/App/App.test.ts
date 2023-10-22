@@ -11,7 +11,7 @@ describe("Given an App component", () => {
       const heading = document.querySelector("main")!;
 
       expect(heading.className).not.toBeNull();
-      expect(heading.className).toBe("main-header");
+      expect(heading.className).toBe("main-container");
     });
   });
 });
