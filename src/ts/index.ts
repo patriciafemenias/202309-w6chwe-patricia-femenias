@@ -14,8 +14,6 @@ export const getPokemons = async (apiUrl: string): Promise<Pokemon[]> => {
 
 const pokemons = await getPokemons(apiUrl);
 
-await getPokemons(apiUrl);
-
 export default getPokemons;
 
 const body = document.querySelector("body")!;
